@@ -1,1 +1,1 @@
-# python_course_2020
+# Repository for Python Training
