@@ -7,10 +7,10 @@ import pytest
 def app(request):
     fixture = Application()
     request.addfinalizer(fixture.destroy)
-    return  fixture
+    return fixture
 
     
 def test_add_contact(app):
     app.session.login(username="admin", password="secret")
-    app.create_contact(Contact(first_name="test_name", midle_name="test_midle_name", last_name="test_last_name", nikname="test_nikname"))
+    app.contact.create(Contact(first_name="test_name", midle_name="test_midle_name", last_name="test_last_name", nikname="test_nikname"))
     app.session.logout()
