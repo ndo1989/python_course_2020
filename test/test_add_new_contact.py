@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from contact import Contact
-from application import Application
+from pythoncourse2020.model.contact import Contact
+from pythoncourse2020.fixture.application import Application
 import pytest
 
 @pytest.fixture
