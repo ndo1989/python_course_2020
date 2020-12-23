@@ -17,6 +17,7 @@ class GroupHelper:
         # submit group creation
         wd.find_element_by_name("submit").click()
         self.return_to_groups_page()
+        self.return_to_home_page()
 
     def fill_group_form(self, group):
         wd = self.app.wd
@@ -45,6 +46,11 @@ class GroupHelper:
         # submit deletion
         wd.find_element_by_name("delete").click()
         self.return_to_groups_page()
+        self.return_to_home_page()
+
+    def return_to_home_page(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text("home").click()
 
     def select_first_group(self):
         wd = self.app.wd
@@ -61,4 +67,5 @@ class GroupHelper:
         # submit update creation
         wd.find_element_by_name("update").click()
         self.return_to_groups_page()
+        self.return_to_home_page()
 
