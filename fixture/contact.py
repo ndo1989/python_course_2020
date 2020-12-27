@@ -46,10 +46,13 @@ class ContactHelper:
     def modify_first_contact(self, new_contact_data):
         wd = self.app.wd
         # init edit contact
-        # self.choice_first_contact()
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         wd.find_element_by_name("update")
         self.fill_contact_form(new_contact_data)
         # submit contact update
         wd.find_element_by_name("update").click()
         self.return_to_home_page()
+
+    def count(self):
+        wd = self.app.wd
+        return len(wd.find_elements_by_name("selected[]"))
