@@ -58,7 +58,7 @@ class ContactHelper:
         self.open_home_page()
         return len(wd.find_elements_by_name("selected[]"))
 
-
     def open_home_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        if not len(wd.find_elements_by_name("add")) > 0:
+            wd.find_element_by_link_text("home").click()
