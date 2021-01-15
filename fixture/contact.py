@@ -39,6 +39,7 @@ class ContactHelper:
         # submit contact deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to.alert.accept()
+        wd.find_element_by_css_selector("div.msgbox")
         self.open_home_page()
 
 
@@ -71,7 +72,9 @@ class ContactHelper:
         self.open_home_page()
         contacts = []
         for element in wd.find_elements_by_name("entry"):
-            text = element.text
             id = element.find_element_by_name("selected[]").get_attribute("value")
-            contacts.append(Contact(first_name=text, id=id))
+            text_of_cells = element.find_elements_by_tag_name("td")
+            last_name = text_of_cells[1].text
+            first_name = text_of_cells[2].text
+            contacts.append(Contact(first_name=first_name, last_name=last_name, id=id))
         return contacts
