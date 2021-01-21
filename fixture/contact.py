@@ -25,9 +25,11 @@ class ContactHelper:
         self.change_field_value("firstname", contact.first_name)
         self.change_field_value("middlename", contact.midle_name)
         self.change_field_value("lastname", contact.last_name)
+        self.change_field_value("address", contact.address)
         self.change_field_value("home", contact.homephone)
         self.change_field_value("mobile", contact.mobilephone)
         self.change_field_value("work", contact.workphone)
+        self.change_field_value("email", contact.email)
         self.change_field_value("phone2", contact.secondaryphone)
         self.change_field_value("nickname", contact.nikname)
 
@@ -118,10 +120,10 @@ class ContactHelper:
                 id = cells[0].find_element_by_name("selected[]").get_attribute("value")
                 last_name = cells[1].text
                 first_name = cells[2].text
-                all_phones = cells[5].text.splitlines()
+                all_phones = cells[5].text
                 self.сontact_cache.append(Contact(first_name=first_name, last_name=last_name, id=id,
-                                                  homephone=all_phones[0], mobilephone=all_phones[1],
-                                                  workphone=all_phones[2], secondaryphone=all_phones[3]))
+                                                  all_phones_from_home_page=all_phones))
+
         return list(self.сontact_cache)
 
 
