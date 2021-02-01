@@ -4,7 +4,7 @@ from random import randrange
 
 def test_comparison_of_all_fields_on_home_page_and_edit_page(app):
     if app.contact.count_contact() == 0:
-        app.contact.create(Contact(first_name="test_name", midle_name="midle_name", last_name="last_name", address ="Ni No 2", homephone="1111111111",
+        app.contact.create(Contact(first_name="test_name", midle_name="midle_name", last_name="last_name", address ="NiNo2", homephone="1111111111",
                       workphone="22222222", mobilephone="33333333", email="test2@mail.ru",  secondaryphone="4444444"))
     old_contacts = app.contact.get_contact_list()
     index = randrange(len(old_contacts))
