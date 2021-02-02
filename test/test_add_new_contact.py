@@ -3,7 +3,7 @@ from pythoncourse2020.model.contact import Contact
 import pytest
 import random
 import string
-from pythoncourse2020.data.add_group import testdata
+from pythoncourse2020.data.groups import testdata
 
 @pytest.mark.parametrize("contact", testdata, ids=[repr(x) for x in testdata])
 def test_add_contact(app, contact):
