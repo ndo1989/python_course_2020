@@ -3,15 +3,8 @@ from pythoncourse2020.model.contact import Contact
 import pytest
 import random
 import string
+from pythoncourse2020.data.add_group import testdata
 
-def random_string(prefix, maxlen):
-    symbols = string.ascii_letters + string.digits + " "
-    return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
-
-testdata = [
-    Contact(first_name=random_string("first_name", 10), midle_name=random_string("midle_name", 20), last_name=random_string("last_name", 20))
-    for name in range(1)
-]
 @pytest.mark.parametrize("contact", testdata, ids=[repr(x) for x in testdata])
 def test_add_contact(app, contact):
     pass
