@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from pythoncourse2020.model.group import Group
 
-def test_add_group(app, data_groups):
-    group = data_groups
+def test_add_group(app, json_groups):
+    group = json_groups
     old_groups = app.group.get_group_list()
     #group = Group(name="edwded", header="dcsdw", footer="edwedw")
     app.group.create(group)
