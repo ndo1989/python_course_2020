@@ -1,5 +1,6 @@
 from pythoncourse2020.fixture.application import Application
 import pytest
+import jsonpickle
 import json
 import os.path
 import importlib
@@ -46,4 +47,5 @@ def load_from_module(module):
     return importlib.import_module("pythoncourse2020.data.%s" % module).testdata
 
 def load_from_json(file):
-    pass
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data/%s.json" % file)) as f:
+        return jsonpickle.decode(f.read())
