@@ -1,0 +1,42 @@
+[
+  {
+    "py/object": "pythoncourse2020.model.contact.Contact",
+    "first_name": null,
+    "midle_name": null,
+    "last_name": null,
+    "address": null,
+    "homephone": null,
+    "mobilephone": null,
+    "workphone": null,
+    "email": null,
+    "email2": null,
+    "email3": null,
+    "secondaryphone": null,
+    "nikname": null,
+    "all_phones_from_home_page": null,
+    "all_emails_from_home_page": null,
+    "id": null,
+    "firstname": "firstnameO6KA7",
+    "lastname": "lastnamed3qPLEJLSB3ZGTaia9h"
+  },
+  {
+    "py/object": "pythoncourse2020.model.contact.Contact",
+    "first_name": null,
+    "midle_name": null,
+    "last_name": null,
+    "address": null,
+    "homephone": null,
+    "mobilephone": null,
+    "workphone": null,
+    "email": null,
+    "email2": null,
+    "email3": null,
+    "secondaryphone": null,
+    "nikname": null,
+    "all_phones_from_home_page": null,
+    "all_emails_from_home_page": null,
+    "id": null,
+    "firstname": "firstnamep6yd",
+    "lastname": "lastnamerKq33ybkZ xyzu"
+  }
+]
