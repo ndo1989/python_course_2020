@@ -22,9 +22,9 @@ class ContactHelper:
 
     def fill_contact_form(self, contact):
         wd = self.app.wd
-        self.change_field_value("firstname", contact.first_name)
+        self.change_field_value("firstname", contact.firstname)
         self.change_field_value("middlename", contact.midle_name)
-        self.change_field_value("lastname", contact.last_name)
+        self.change_field_value("lastname", contact.lastname)
         self.change_field_value("address", contact.address)
         self.change_field_value("home", contact.homephone)
         self.change_field_value("mobile", contact.mobilephone)
@@ -56,6 +56,34 @@ class ContactHelper:
         wd.find_element_by_css_selector("div.msgbox")
         self.open_home_page()
         self.сontact_cache = None
+
+
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        self.choice_contact_by_id(id)
+        # submit contact deletion
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        wd.switch_to.alert.accept()
+        wd.find_element_by_css_selector("div.msgbox")
+        self.open_home_page()
+        self.сontact_cache = None
+
+    def modify_contact_by_id(self, id, contact_new):
+        wd = self.app.wd
+        self.open_home_page()
+        # init edit contact
+        wd.find_element_by_css_selector("a[href='edit.php?id=%s" % id).click()
+        self.fill_contact_form(contact_new)
+        # submit contact update
+        wd.find_element_by_name("update").click()
+        self.return_to_home_page()
+        self.сontact_cache = None
+
+    def choice_contact_by_id(self, id):
+        wd = self.app.wd
+        self.open_home_page()
+        wd.find_element_by_css_selector("input[value='%s" % id).click()
+
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -120,12 +148,12 @@ class ContactHelper:
             for row in wd.find_elements_by_name("entry"):
                 cells = row.find_elements_by_tag_name("td")
                 id = cells[0].find_element_by_name("selected[]").get_attribute("value")
-                last_name = cells[1].text
-                first_name = cells[2].text
+                lastname = cells[1].text
+                firstname = cells[2].text
                 address = cells[3].text
                 all_emails = cells[4].text
                 all_phones = cells[5].text
-                self.сontact_cache.append(Contact(first_name=first_name, last_name=last_name, id=id,
+                self.сontact_cache.append(Contact(firstname=firstname, lastname=lastname, id=id,
                                                   address=address, all_emails_from_home_page = all_emails,
                                                   all_phones_from_home_page=all_phones))
 

@@ -26,7 +26,7 @@ def random_string(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 testdata = [
-    Contact(first_name=random_string("first_name", 10), midle_name=random_string("midle_name", 20), last_name=random_string("last_name", 20))
+    Contact(firstname=random_string("firstname", 10), lastname=random_string("lastname", 20))
     for name in range(n)
 ]
 
