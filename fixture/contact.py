@@ -25,15 +25,16 @@ class ContactHelper:
         self.change_field_value("firstname", contact.firstname)
         self.change_field_value("middlename", contact.middlename)
         self.change_field_value("lastname", contact.lastname)
+        self.change_field_value("nickname", contact.nickname)
         self.change_field_value("address", contact.address)
         self.change_field_value("home", contact.homephone)
-        self.change_field_value("mobile", contact.mobilephone)
-        self.change_field_value("work", contact.workphone)
+        self.change_field_value("mobile", contact.mobile)
+        self.change_field_value("work", contact.work)
+        self.change_field_value("phone2", contact.fax)
         self.change_field_value("email", contact.email)
         self.change_field_value("email2", contact.email2)
         self.change_field_value("email3", contact.email3)
-        self.change_field_value("phone2", contact.secondaryphone)
-        self.change_field_value("nickname", contact.nikname)
+        #self.change_field_value("nickname", contact.nikname)
 
     def change_field_value(self, fild_firstname, text):
         wd = self.app.wd
@@ -154,7 +155,7 @@ class ContactHelper:
                 all_emails = cells[4].text
                 all_phones = cells[5].text
                 self.сontact_cache.append(Contact(firstname=firstname, lastname=lastname, id=id,
-                                                  address=address, all_emails_from_home_page = all_emails,
+                                                  address=address, all_emails_from_home_page=all_emails,
                                                   all_phones_from_home_page=all_phones))
 
         return list(self.сontact_cache)
