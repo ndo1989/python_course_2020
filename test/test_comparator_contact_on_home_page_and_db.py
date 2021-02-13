@@ -11,7 +11,7 @@ def test_comparator_contact_on_home_page_and_db(app, db):
         map(lambda y: (y.id, y.firstname, y.lastname, y.all_emails_from_home_page, y.all_phones_from_home_page), contacts_home_page))
     list_contacts_from_db = list(
         map(lambda y: (y.id, y.firstname, y.lastname, merge_emails_like_on_home_page(y), merge_phones_like_on_home_page(y)), contacts_db))
-    assert sorted(list_contacts_from_home_page, key=lambda y: y[0]) == sorted(list_contacts_from_db, key=lambda y: y[0])
+    assert sorted(list_contacts_from_home_page) == sorted(list_contacts_from_db)
 
 
 
