@@ -91,7 +91,7 @@ class DbFixture:
                            " from group_list a join address_in_groups b on b.group_id = a.group_id join addressbook c on c.id=b.id")
             for row in cursor:
                 (id, name, header, footer) = row
-                list.append(Group(id=str(id), name=name, header=header, footer=footer))
+                list.append(Group(id=str(id),  name=name, header=header, footer=footer))
         finally:
             cursor.close()
         return list
