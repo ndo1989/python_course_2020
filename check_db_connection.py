@@ -1,15 +1,17 @@
 import pymysql.cursors
 from pythoncourse2020.fixture.db import DbFixture
+from pythoncourse2020.model.group import Group
 
 db = DbFixture(host="127.0.0.1", name="addressbook", user="root", password="")
 
 try:
-    contacts = db.get_contact_list()
-    for contact in contacts:
-       print(contact)
-    print(len(contacts))
+    l = db.get_contact_in_group(Group(id="340"))
+    for contact in l:
+       print(item)
+    print(len(l))
 finally:
-    db.destroy()
+    pass
+    #db.destroy()
 
 #try:
     #groups = db.get_group_list()

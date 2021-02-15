@@ -37,5 +37,64 @@ class DbFixture:
             cursor.close()
         return list
 
+    def get_contacts_in_group(self):
+        list = []
+        cursor = self.connection.cursor()
+        try:
+            cursor.execute(
+                "select id, firstname, lastname, address, home, mobile, work, email, email2, email3, phone2"
+                           " from addressbook where id in (select id from address_in_groups)")
+            for row in cursor:
+                (id, firstname, lastname, address, home, mobile, work, email, email2, email3, phone2) = row
+                list.append(Contact(id=str(id), firstname=firstname, lastname=lastname, address=address, homephone=home,
+                                    mobile=mobile, work=work, email=email, email2=email2, email3=email3))
+        finally:
+            cursor.close()
+        return list
+
+    def get_contacts_not_in_group(self):
+        list = []
+        cursor = self.connection.cursor()
+        try:
+            cursor.execute(
+                "select a.id, a.firstname, a.lastname, a.address, a.home, a.mobile, a.work, a.email, a.email2, a.email3 from addressbook a left join address_in_groups ag on ag.id=a.id where ag.id is null")
+            for row in cursor:
+                (id, firstname, lastname, address, home, mobile, work, email, email2, email3) = row
+                list.append(Contact(id=str(id), firstname=firstname, lastname=lastname, address=address, homephone=home,
+                                    mobile=mobile, work=work, email=email, email2=email2, email3=email3))
+
+        finally:
+            cursor.close()
+        return list
+
+    def get_contacts_in_group_by_group_id(self, group_id):
+        list = []
+        cursor = self.connection.cursor()
+        sql = """select id, firstname, lastname, address, home, mobile, work, email, email2, email3
+                 from addressbook where id in (select id from address_in_groups where group_id=%s)"""
+        try:
+            cursor.execute(sql, (int(group_id),))
+            for row in cursor:
+                (id, firstname, lastname, address, home, mobile, work, email, email2, email3) = row
+                list.append(Contact(id=str(id), firstname=firstname, lastname=lastname, address=address, homephone=home,
+                                    mobile=mobile, work=work, email=email, email2=email2, email3=email3))
+        finally:
+            cursor.close()
+        return list
+
+    def get_groups_with_contacts(self):
+        list = []
+        cursor = self.connection.cursor()
+        try:
+            cursor.execute("select group_id, group_name, group_header, group_footer "
+                           "from group_list where group_id in (select group_id from address_in_groups)")
+            for row in cursor:
+                (id, name, header, footer) = row
+                list.append(Group(id=str(id), name=name, header=header, footer=footer))
+        finally:
+            cursor.close()
+        return list
+
+
     def destroy(self):
         self.connection.close()
