@@ -49,6 +49,11 @@ class ContactHelper:
         #wd.find_elements_by_name("selected[]")[index].click()
         wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
 
+    def choice_contact(self):
+        wd = self.app.wd
+        wd.find_element_by_name("selected[]").click()
+
+
     def delete_contact_by_index(self, index):
         wd = self.app.wd
         self.choice_contact_by_index(index)
@@ -251,5 +256,5 @@ class ContactHelper:
     def delete_contact_from_group(self, contact_id, group_id):
         wd = self.app.wd
         self.open_contact_list_in_group_by_id(group_id)
-        self.choice_contact_by_id(contact_id)
+        self.choice_contact
         wd.find_element_by_name("remove").click()

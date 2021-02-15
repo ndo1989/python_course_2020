@@ -42,10 +42,10 @@ class DbFixture:
         cursor = self.connection.cursor()
         try:
             cursor.execute(
-                "select id, firstname, lastname, address, home, mobile, work, email, email2, email3, phone2"
+                "select id, firstname, lastname, address, home, mobile, work, email, email2, email3"
                            " from addressbook where id in (select id from address_in_groups)")
             for row in cursor:
-                (id, firstname, lastname, address, home, mobile, work, email, email2, email3, phone2) = row
+                (id, firstname, lastname, address, home, mobile, work, email, email2, email3) = row
                 list.append(Contact(id=str(id), firstname=firstname, lastname=lastname, address=address, homephone=home,
                                     mobile=mobile, work=work, email=email, email2=email2, email3=email3))
         finally:
@@ -57,7 +57,8 @@ class DbFixture:
         cursor = self.connection.cursor()
         try:
             cursor.execute(
-                "select a.id, a.firstname, a.lastname, a.address, a.home, a.mobile, a.work, a.email, a.email2, a.email3 from addressbook a left join address_in_groups ag on ag.id=a.id where ag.id is null")
+                "select a.id, a.firstname, a.lastname, a.address, a.home, a.mobile, a.work, a.email, a.email2, a.email3"
+                " from addressbook a left join address_in_groups b on b.id=a.id where b.id is null")
             for row in cursor:
                 (id, firstname, lastname, address, home, mobile, work, email, email2, email3) = row
                 list.append(Contact(id=str(id), firstname=firstname, lastname=lastname, address=address, homephone=home,
@@ -67,13 +68,13 @@ class DbFixture:
             cursor.close()
         return list
 
-    def get_contacts_in_group_by_group_id(self, group_id):
+
+    def get_contacts_in_group(self):
         list = []
         cursor = self.connection.cursor()
-        sql = """select id, firstname, lastname, address, home, mobile, work, email, email2, email3
-                 from addressbook where id in (select id from address_in_groups where group_id=%s)"""
         try:
-            cursor.execute(sql, (int(group_id),))
+            cursor.execute("select distinct (a.id), a.firstname, a.lastname, a.address, a.home, a.mobile, a.work, "
+                           "a.email, a.email2, a.email3 from addressbook a inner join address_in_groups b on b.id=a.id")
             for row in cursor:
                 (id, firstname, lastname, address, home, mobile, work, email, email2, email3) = row
                 list.append(Contact(id=str(id), firstname=firstname, lastname=lastname, address=address, homephone=home,
@@ -86,15 +87,14 @@ class DbFixture:
         list = []
         cursor = self.connection.cursor()
         try:
-            cursor.execute("select group_id, group_name, group_header, group_footer "
-                           "from group_list where group_id in (select group_id from address_in_groups)")
+            cursor.execute("select a.group_id, a.group_name, a.group_header, a.group_footer"
+                           " from group_list a join address_in_groups b on b.group_id = a.group_id join addressbook c on c.id=b.id")
             for row in cursor:
                 (id, name, header, footer) = row
                 list.append(Group(id=str(id), name=name, header=header, footer=footer))
         finally:
             cursor.close()
         return list
-
 
     def destroy(self):
         self.connection.close()
