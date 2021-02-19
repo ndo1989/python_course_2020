@@ -1,17 +1,51 @@
 [
-
   {
-    "py/object": "pythoncourse2020.model.group.Group",
-    "name": "name10",
-    "header": "headeraZ0Ovree1",
-    "footer": "footerCeje5C A",
+    "py/object": "model.group.Group",
+    "name": "",
+    "header": "",
+    "footer": "",
     "id": null
   },
   {
-    "py/object": "pythoncourse2020.model.group.Group",
-    "name": "name20",
-    "header": "headerQ O H",
-    "footer": "footer",
+    "py/object": "model.group.Group",
+    "name": "nameldyby",
+    "header": "headerI2",
+    "footer": "footerP T Dp06",
+    "id": null
+  },
+  {
+    "py/object": "model.group.Group",
+    "name": "namebkokb",
+    "header": "headerQ2X6ZOT8W  4CIRL",
+    "footer": "footer dEXDhr y gChkh",
+    "id": null
+  },
+  {
+    "py/object": "model.group.Group",
+    "name": "nameyJ  ",
+    "header": "headerGESUwZLAxcrx T01af",
+    "footer": "footersV ",
+    "id": null
+  },
+  {
+    "py/object": "model.group.Group",
+    "name": "namem",
+    "header": "headeram7RCF3NP60 d",
+    "footer": "footerLdo",
+    "id": null
+  },
+  {
+    "py/object": "model.group.Group",
+    "name": "name5h  FTbrF",
+    "header": "header8 c Woeb i WuLlVlQ6",
+    "footer": "footer 4HaEBE d",
+    "id": null
+  },
+  {
+    "py/object": "model.group.Group",
+    "name": "name8e ",
+    "header": "headercDhhuS6",
+    "footer": "footerV O3LdZQs2 3",
     "id": null
   }
 ]

@@ -1,4 +1,4 @@
-from pythoncourse2020.model.contact import Contact
+from model.contact import Contact
 import random
 
 def test_modify_some_contact(app, db, check_ui):

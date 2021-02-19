@@ -1,5 +1,5 @@
-from pythoncourse2020.fixture.application import Application
-from pythoncourse2020.fixture.db import DbFixture
+from fixture.application import Application
+from fixture.db import DbFixture
 import pytest
 import jsonpickle
 import json

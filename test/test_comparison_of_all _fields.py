@@ -1,4 +1,4 @@
-from pythoncourse2020.model.contact import Contact
+from model.contact import Contact
 import re
 from random import randrange
 

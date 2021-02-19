@@ -1,5 +1,5 @@
-from pythoncourse2020.model.group import Group
-from pythoncourse2020.model.contact import Contact
+from model.group import Group
+from model.contact import Contact
 import random
 
 def test_delete_contact_from_group(app, db):

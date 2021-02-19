@@ -1,4 +1,4 @@
-from pythoncourse2020.model.group import Group
+from model.group import Group
 import random
 from random import randrange
 

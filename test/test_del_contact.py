@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from pythoncourse2020.model.contact import Contact
+from model.contact import Contact
 import random
 
 def test_delete_some_contact(app, db, check_ui):
