@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="842730b9-b7de-450a-b8b2-b92d3c3278c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/pythoncourse2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythoncourse2020.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/contacts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/orm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact_to_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact_to_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_new_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_new_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_comparator_contact_on_home_page_and_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_comparator_contact_on_home_page_and_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_comparison_of_all _fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_comparison_of_all _fields.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_db_matches_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_db_matches_ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_delete_contact_from_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_delete_contact_from_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_modify_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_modify_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +94,18 @@
       <option name="presentableId" value="Default" />
       <updated>1607255063341</updated>
     </task>
+    <task id="LOCAL-00001" summary="1. рабочий вариант">
+      <created>1613736997147</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613736997147</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1. рабочий вариант" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. рабочий вариант" />
   </component>
 </project>
