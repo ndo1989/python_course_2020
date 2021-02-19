@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="842730b9-b7de-450a-b8b2-b92d3c3278c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,13 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613752075520</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. рабочий вариант 4">
+      <created>1613755687250</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613755687250</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. рабочий вариант" />
     <MESSAGE value="1. рабочий вариант 2" />
     <MESSAGE value="1. рабочий вариант 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. рабочий вариант 3" />
+    <MESSAGE value="1. рабочий вариант 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. рабочий вариант 4" />
   </component>
 </project>
