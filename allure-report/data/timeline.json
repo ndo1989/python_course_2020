@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-7COPOKH",
+    "children" : [ {
+      "name" : "1260-MainThread",
+      "children" : [ {
+        "name" : "test_add_group[None:nameldyby':headerI2:footerP T Dp06]",
+        "uid" : "1796f0702f7c39e3",
+        "parentUid" : "dff67ddd1e7ba2687e95186a10afaf59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1614186863715,
+          "stop" : 1614186866123,
+          "duration" : 2408
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None:nameldyby':headerI2:footerP T Dp06" ]
+      }, {
+        "name" : "test_add_group[None:nameldyby:headerI2:footerP T Dp06]",
+        "uid" : "e44e5d605be9eea7",
+        "parentUid" : "dff67ddd1e7ba2687e95186a10afaf59",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614186859834,
+          "stop" : 1614186863510,
+          "duration" : 3676
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None:nameldyby:headerI2:footerP T Dp06" ]
+      } ],
+      "uid" : "dff67ddd1e7ba2687e95186a10afaf59"
+    } ],
+    "uid" : "10afe5b8fa2082f1a351f50252f691e5"
+  } ]
+}

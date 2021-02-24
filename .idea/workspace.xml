@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="842730b9-b7de-450a-b8b2-b92d3c3278c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythoncourse2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythoncourse2020.iml" afterDir="false" />
+    <list default="true" id="842730b9-b7de-450a-b8b2-b92d3c3278c5" name="Default Changelist" comment="py.test: error: unrecognized arguments: --alluredir">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env1/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/groups.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613765797776</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="py.test: error: unrecognized arguments: --alluredir">
+      <created>1613988548947</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1613988548947</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +165,7 @@
     <MESSAGE value="1. рабочий вариант 4" />
     <MESSAGE value="1. рабочий вариант 5" />
     <MESSAGE value="1. рабочий вариант 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. рабочий вариант 6" />
+    <MESSAGE value="py.test: error: unrecognized arguments: --alluredir" />
+    <option name="LAST_COMMIT_MESSAGE" value="py.test: error: unrecognized arguments: --alluredir" />
   </component>
 </project>

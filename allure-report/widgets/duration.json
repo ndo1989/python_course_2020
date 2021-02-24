@@ -1,0 +1,21 @@
+[ {
+  "uid" : "1796f0702f7c39e3",
+  "name" : "test_add_group[None:nameldyby':headerI2:footerP T Dp06]",
+  "time" : {
+    "start" : 1614186863715,
+    "stop" : 1614186866123,
+    "duration" : 2408
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e44e5d605be9eea7",
+  "name" : "test_add_group[None:nameldyby:headerI2:footerP T Dp06]",
+  "time" : {
+    "start" : 1614186859834,
+    "stop" : 1614186863510,
+    "duration" : 3676
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

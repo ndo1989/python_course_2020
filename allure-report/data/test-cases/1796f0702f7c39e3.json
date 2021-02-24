@@ -1,0 +1,211 @@
+{
+  "uid" : "1796f0702f7c39e3",
+  "name" : "test_add_group[None:nameldyby':headerI2:footerP T Dp06]",
+  "fullName" : "test.test_add_group#test_add_group",
+  "historyId" : "f02ba78210a1188157f54d5d3d6dab58",
+  "time" : {
+    "start" : 1614186863715,
+    "stop" : 1614186866123,
+    "duration" : 2408
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert [383:New grou...ootersV , ...] == [383:New grou...ootersV , ...]\n  Left contains one more item: None:nameldyby':headerI2:footerP T Dp06\n  Use -v to get the full diff",
+  "statusTrace" : "app = <fixture.application.Application object at 0x00000229EFDBB4F0>\ndb = <fixture.db.DbFixture object at 0x00000229EFDBB400>, json_groups = None:nameldyby':headerI2:footerP T Dp06\ncheck_ui = False\n\n    def test_add_group(app, db, json_groups, check_ui):\n        group = json_groups\n        with allure.step('Given a grop list'):\n            old_groups = db.get_group_list()\n        with allure.step('WhenI add a group %s to the list' %group):\n            app.group.create(group)\n        with allure.step('Then the new group list is equal to the old list with the added group'):\n            new_groups = db.get_group_list()\n            old_groups.append(group)\n>           assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)\nE           AssertionError: assert [383:New grou...ootersV , ...] == [383:New grou...ootersV , ...]\nE             Left contains one more item: None:nameldyby':headerI2:footerP T Dp06\nE             Use -v to get the full diff\n\ntest\\test_add_group.py:14: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "stop",
+    "time" : {
+      "start" : 1614186845730,
+      "stop" : 1614186845730,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1614186863714,
+      "stop" : 1614186863714,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1614186863569,
+      "stop" : 1614186863713,
+      "duration" : 144
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "db",
+    "time" : {
+      "start" : 1614186845730,
+      "stop" : 1614186845750,
+      "duration" : 20
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert [383:New grou...ootersV , ...] == [383:New grou...ootersV , ...]\n  Left contains one more item: None:nameldyby':headerI2:footerP T Dp06\n  Use -v to get the full diff",
+    "statusTrace" : "app = <fixture.application.Application object at 0x00000229EFDBB4F0>\ndb = <fixture.db.DbFixture object at 0x00000229EFDBB400>, json_groups = None:nameldyby':headerI2:footerP T Dp06\ncheck_ui = False\n\n    def test_add_group(app, db, json_groups, check_ui):\n        group = json_groups\n        with allure.step('Given a grop list'):\n            old_groups = db.get_group_list()\n        with allure.step('WhenI add a group %s to the list' %group):\n            app.group.create(group)\n        with allure.step('Then the new group list is equal to the old list with the added group'):\n            new_groups = db.get_group_list()\n            old_groups.append(group)\n>           assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)\nE           AssertionError: assert [383:New grou...ootersV , ...] == [383:New grou...ootersV , ...]\nE             Left contains one more item: None:nameldyby':headerI2:footerP T Dp06\nE             Use -v to get the full diff\n\ntest\\test_add_group.py:14: AssertionError",
+    "steps" : [ {
+      "name" : "Given a grop list",
+      "time" : {
+        "start" : 1614186863715,
+        "stop" : 1614186863720,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "WhenI add a group None:nameldyby':headerI2:footerP T Dp06 to the list",
+      "time" : {
+        "start" : 1614186863720,
+        "stop" : 1614186866015,
+        "duration" : 2295
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then the new group list is equal to the old list with the added group",
+      "time" : {
+        "start" : 1614186866015,
+        "stop" : 1614186866120,
+        "duration" : 105
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert [383:New grou...ootersV , ...] == [383:New grou...ootersV , ...]\n  Left contains one more item: None:nameldyby':headerI2:footerP T Dp06\n  Use -v to get the full diff\n",
+      "statusTrace" : "  File \"C:\\Devel\\GitHub\\pythoncourse2020\\test\\test_add_group.py\", line 14, in test_add_group\n    assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1614186866810,
+      "stop" : 1614186869279,
+      "duration" : 2469
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1614186866797,
+      "stop" : 1614186866798,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_group"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7COPOKH"
+  }, {
+    "name" : "thread",
+    "value" : "1260-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_groups",
+    "value" : "None:nameldyby':headerI2:footerP T Dp06"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1796f0702f7c39e3.json",
+  "parameterValues" : [ "None:nameldyby':headerI2:footerP T Dp06" ]
+}

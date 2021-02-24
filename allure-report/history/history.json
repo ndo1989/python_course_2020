@@ -1,0 +1,41 @@
+{
+  "f02ba78210a1188157f54d5d3d6dab58" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1796f0702f7c39e3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert [383:New grou...ootersV , ...] == [383:New grou...ootersV , ...]\n  Left contains one more item: None:nameldyby':headerI2:footerP T Dp06\n  Use -v to get the full diff",
+      "time" : {
+        "start" : 1614186863715,
+        "stop" : 1614186866123,
+        "duration" : 2408
+      }
+    } ]
+  },
+  "faeba55123aa41283ac22645d05e111c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e44e5d605be9eea7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614186859834,
+        "stop" : 1614186863510,
+        "duration" : 3676
+      }
+    } ]
+  }
+}
