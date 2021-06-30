@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="842730b9-b7de-450a-b8b2-b92d3c3278c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/training/lesson2/answer21/calculate_slep_time_for_degni.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson2/answer21/calculate_slep_time_for_degni_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson2/answer22/calculate_slep_time_for_djymi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson2/answer22/calculate_slep_time_for_djymi_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson2/answer23/share_price_after_1_year.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson2/answer23/share_price_after_1_year_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson2/answer24/who_is_ John _Galt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson2/answer25/answer25.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson3/answer31/rook_for _ostap_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson3/answer31/rook_for_ostap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson3/answer34/not_a_lucky_ticket_all_the_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson3/answer34/not_a_lucky_ticket_all_the_time_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training/lesson3/answer34/ааа.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/lesson 3/answer 3.3/answer 3.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/lesson 3/answer 3.3/answer 3.3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/lesson 3/answer 3.1/answer 3.1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/lesson 3/answer 3.2/answer 3.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/lesson3/answer 3.2/answer 3.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/lesson 3/answer 3.3/answer 3.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/lesson3/answer 3.3/answer 3.3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -47,8 +63,8 @@
       <recent name="C:\Devel\GitHub\pythoncourse2020\fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.answer 3.3">
-    <configuration name="answer 3.1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.not_a_lucky_ticket_all_the_time">
+    <configuration name="not_a_lucky_ticket_all_the_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythoncourse2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,11 +72,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/lesson 3/answer 3.1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/lesson3/answer34" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/lesson 3/answer 3.1/answer 3.1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/lesson3/answer34/not_a_lucky_ticket_all_the_time.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -69,87 +85,77 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="answer 3.2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythoncourse2020" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/lesson 3/answer 3.2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/lesson 3/answer 3.2/answer 3.2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="answer 3.3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythoncourse2020" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/lesson 3/answer 3.3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/lesson 3/answer 3.3/answer 3.3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_add_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for not_a_lucky_ticket_all_the_time_test.test_convert_999_to_000_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pythoncourse2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/lesson3/answer34" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_group.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;not_a_lucky_ticket_all_the_time_test.test_convert_999_to_000_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_modify_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for not_a_lucky_ticket_all_the_time_test.test_to_000_2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pythoncourse2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/lesson3/answer34" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_modify_group.py&quot;" />
+      <option name="_new_target" value="&quot;not_a_lucky_ticket_all_the_time_test.test_to_000_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for not_a_lucky_ticket_all_the_time_test.test_to_000_3" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythoncourse2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/lesson3/answer34" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;not_a_lucky_ticket_all_the_time_test.test_to_000_3&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in not_a_lucky_ticket_all_the_time_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythoncourse2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/lesson3/answer34" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/training/lesson3/answer34/not_a_lucky_ticket_all_the_time_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.answer 3.3" />
-        <item itemvalue="Python.answer 3.2" />
-        <item itemvalue="Python.answer 3.1" />
-        <item itemvalue="Python tests.pytest in test_add_group.py" />
-        <item itemvalue="Python tests.pytest in test_modify_group.py" />
+        <item itemvalue="Python.not_a_lucky_ticket_all_the_time" />
+        <item itemvalue="Python tests.pytest in not_a_lucky_ticket_all_the_time_test.py" />
+        <item itemvalue="Python tests.pytest for not_a_lucky_ticket_all_the_time_test.test_convert_999_to_000_1" />
+        <item itemvalue="Python tests.pytest for not_a_lucky_ticket_all_the_time_test.test_to_000_3" />
+        <item itemvalue="Python tests.pytest for not_a_lucky_ticket_all_the_time_test.test_to_000_2" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623943461586</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="тренинг урок 3/3">
+      <created>1623947433326</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1623947433326</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,6 +273,7 @@
     <MESSAGE value="Задание №29: Реализована генерация отчётов при помощи Allure" />
     <MESSAGE value="тренинг урок 3" />
     <MESSAGE value="тренинг урок 3/1" />
-    <option name="LAST_COMMIT_MESSAGE" value="тренинг урок 3/1" />
+    <MESSAGE value="тренинг урок 3/3" />
+    <option name="LAST_COMMIT_MESSAGE" value="тренинг урок 3/3" />
   </component>
 </project>
